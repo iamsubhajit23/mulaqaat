@@ -5,10 +5,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "vite build",
+  "deploy": "gh-pages -d dist"
+}
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
